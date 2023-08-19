@@ -17,27 +17,27 @@ Neste caso de teste utilizo a ferramenta selenium IDE para validar a funcionalid
 ### Login Válido
 O próprio site fornece as credenciais de usuário e senha para acessarmos o site. Ao tentar fazer o login com o uso dessas credenciais vemos todos os testes passando.
 
-![Login válido](images/01_login_valido.png)
+![Login válido](images/01_login_valido.PNG)
 
 Para realmente validar se estou logado no site, utilizo como referência o botão de logout que está localizado no dropdown do perfil.
 
-![Dropdown User](images/dropdownUser.png)
+![Dropdown User](images/dropdownUser.PNG)
 
 Como visto acima, todos os testes passaram.
 
 ### Login Inválido
 Para válidar esse cenário utilizo como referência a mensagem de erro "Invalid credentials"
 1. Testando com **Senha Inválida**
-![Senha Inválida](images/02_login_senha_invalida.png)
+![Senha Inválida](images/02_login_senha_invalida.PNG)
 
 2. Testando com **Usuário inválido**
-![Usuário Inválido](images/02_login_usuario_invalido.png)
+![Usuário Inválido](images/02_login_usuario_invalido.PNG)
 
 3. Testando sem inserir **Username**
-![Sem Usuário](images/02_login_sem_usuario.png)
+![Sem Usuário](images/02_login_sem_usuario.PNG)
 
 4. Testando sem inserir **Password**
-![Sem Senha](images/02_login_sem_senha.png)
+![Sem Senha](images/02_login_sem_senha.PNG)
 
 ### Utilizando o terminal
 Para executar os testes via terminal iremos precisar do [Node](https://nodejs.org/en) instalado na máquina, além do node precisaremos também do [chrome driver](https://chromedriver.chromium.org/downloads) (**obs:** Verificar a versão do Chrome e baixar o driver correspondente, caso o contrário teremos erro ao executar. Passei por isso, pois meu Chrome atualizou para a versão 116 e a versão mais recente do chrome driver ainda é a 114).
