@@ -34,7 +34,7 @@ Para válidar esse cenário utilizo como referência a mensagem de erro "Invalid
 ![Usuário Inválido](images/02_login_usuario_invalido.PNG)
 
 3. Testando sem inserir **Username**
-![Sem Usuário](images/02_login_sem_usuario.PNG)
+![Sem Usuário](images/02_login_sem_usuario.png)
 
 4. Testando sem inserir **Password**
 ![Sem Senha](images/02_login_sem_senha.PNG)
