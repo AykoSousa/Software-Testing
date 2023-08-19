@@ -14,7 +14,7 @@ Neste caso de teste utilizo a ferramenta selenium IDE para validar a funcionalid
 
 ### Login Válido
 O próprio site fornece as credenciais de usuário e senha para acessarmos o site. Ao tentar fazer o login com o uso dessas credenciais vemos todos os testes passando.
-![Login válido](./images/validacao_de_funcionamento/01_login_valido.png)
+![Login válido](./images/01_login_valido.png)
 Para realmente validar se estou logado no site, utilizo como referência o botão de logout que está localizado no dropdown do perfil.
-![]()
-Como visto, todos os testes passaram.
+![Dropdown User](./images/dropdownUser.PNG)
+Como visto acima, todos os testes passaram.
