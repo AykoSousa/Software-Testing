@@ -198,7 +198,7 @@
   }],
   "suites": [{
     "id": "944c2ac8-2924-4a02-9c99-cecc1e0817b5",
-    "name": "Default Suite",
+    "name": "LoginOrangeHRM",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
