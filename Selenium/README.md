@@ -41,7 +41,7 @@ Para válidar esse cenário utilizo como referência a mensagem de erro "Invalid
 
 ### Utilizando o terminal
 Para executar os testes via terminal iremos precisar do [Node](https://nodejs.org/en) instalado na máquina, além do node precisaremos também do [chrome driver](https://chromedriver.chromium.org/downloads) (**obs:** Verificar a versão do Chrome e baixar o driver correspondente, caso o contrário teremos erro ao executar. Passei por isso, pois meu Chrome atualizou para a versão 116 e a versão mais recente do chrome driver ainda é a 114).
-![](images/ErrorChromeDriver.png)
+![Error](images/ErrorChromeDriver.PNG)
 O chrome driver vem em uma pasta .zip, então é só descompactar e colocar o executável no Disco Local (C:)
 
 1. Com o node instalado iremos executar o seguinte script
