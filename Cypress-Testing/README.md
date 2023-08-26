@@ -19,6 +19,7 @@ Para esta aplicação validei as seguintes funcionalidades:
 - Validação do saldo total com base nas transações
 
 Resultados obtidos no dashboard do Cypress
-[Resultados no Dashboard](/Cypress-Testing/cypress/img/ExeceucaoTestes.PNG)
+![Resultados no Dashboard](/Cypress-Testing/cypress/img/ExeceucaoTestes.PNG)
+
 Aqui está o vídeo com os resultados dos testes
-[Execução dos Testes](/Cypress-Testing/cypress/videos/spec.cy.js.mp4)
+![Execução dos Testes](/Cypress-Testing/cypress/videos/spec.cy.js.mp4)
