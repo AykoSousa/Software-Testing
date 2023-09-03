@@ -12,14 +12,33 @@ Esse projeto foi desenvolvido pelo professor Mayk Brito da Rocketseat, mas para 
 
 Para esta aplicação validei as seguintes funcionalidades:
 - Botão de cancelamento ao criar nova transação
+
+![Cancelamento de Transações](./cypress/img/cancelarTransacao.PNG)
+
 - Cadastro de entradas
+
+![Cadastro de Entradas](./cypress/img/cadastroDeEntradas.PNG)
+
 - Cadastro de saídas
+
+![Cadastro de Saídas](./cypress/img/cadastroDeSaidas.PNG)
+
 - Verificação se campo de valor aceita somente números
+
+![Validação do Campo de Valor](./cypress/img/campoValor.PNG)
+
 - Remover entradas e saídas
+
+![Remover Entradas e Saídas](./cypress/img/removerEntradasESaidas.PNG)
+
 - Validação do saldo total com base nas transações
 
+![Validação do Saldo Total](./cypress/img/validarSaldos.PNG)
+
 Resultados obtidos no dashboard do Cypress
+
 ![Resultados no Dashboard](/Cypress-Testing/cypress/img/ExeceucaoTestes.PNG)
 
-Aqui está o vídeo com os resultados dos testes
+Output obtidos em vídeo
+
 ![Execução dos Testes](/cypress/videos/output.mp4)
