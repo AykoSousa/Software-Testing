@@ -10,6 +10,10 @@ Esse projeto foi desenvolvido pelo professor Mayk Brito da Rocketseat, mas para 
 ### Link Site:
 - https://devfinance-agilizei.netlify.app/#
 
+### Rodar o projeto
+```bash
+ npx cypress open
+```
 Para esta aplicação validei as seguintes funcionalidades:
 - Botão de cancelamento ao criar nova transação
 
