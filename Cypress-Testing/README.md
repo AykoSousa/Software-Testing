@@ -17,6 +17,9 @@ Esse projeto foi desenvolvido pelo professor Mayk Brito da Rocketseat, mas para 
 Para esta aplicação validei as seguintes funcionalidades:
 - Botão de cancelamento ao criar nova transação
 
+**Observação**
+Usamos o local storage do navegador, assim quando acessarmos a aplicação já haverá valores de entradas e saídas cadastradas.
+
 ![Cancelamento de Transações](./cypress/img/cancelarTransacao.PNG)
 
 - Cadastro de entradas
