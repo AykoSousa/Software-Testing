@@ -60,3 +60,4 @@ após isso, reiniciar o PC que dará tudo certo! Aqui está o vídeo que usei co
 > selenium-side-runner /path/to/your-project.side
 ```
 Assim automaticamente os testes serão executados via terminal.
+![Output Linha de Comando](./images/OutputCLI.PNG)
