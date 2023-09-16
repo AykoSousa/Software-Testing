@@ -2,6 +2,8 @@
 
 Este é um projeto de automação de testes para um e-commerce de Teste usando o Cucumber Framework e a linguagem Ruby. O objetivo deste projeto é garantir que a funcionalidade de login a página de compras esteja funcionando corretamente, identificando e relatando qualquer erro ou comportamento inesperado.
 
+**Link**: https://www.saucedemo.com/
+
 ## Pré-requisitos
 Certifique-se de que você possui os seguintes pré-requisitos instalados em seu ambiente de desenvolvimento:
 
