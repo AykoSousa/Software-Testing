@@ -56,7 +56,7 @@ cucumber
 Isso iniciará a execução dos cenários de teste definidos nos arquivos .feature no diretório features. Certifique-se de que seu WebDriver esteja configurado corretamente antes de executar os testes.
 
 ### Output obtido
-[Output](/features/img/output.PNG)
+[Output](/img/output.PNG)
 
 ## Contribuindo
 Se você deseja contribuir para este projeto, sinta-se à vontade para abrir issues, propor melhorias ou enviar solicitações de pull. Ficarei feliz em receber sua contribuição e aprender mais!
