@@ -1,13 +1,13 @@
 class LoginPage < SitePrism::Page
 
     set_url ''
-    element :usernameField, :id, 'user-name'
-    element :passwordField, :id, 'password'
-    element :loginButton, :id, 'login-button'
+    element :usernameField, '#user-name'
+    element :passwordField, '#password'
+    element :loginButton, '#login-button'
 
     def userLogin(username, password)
-        usernameField.set(username)
-        passwordField.set(password)
+        usernameField.set (username)
+        passwordField.set (password)
         loginButton.click
     end
 

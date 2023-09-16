@@ -65,6 +65,8 @@ GEM
       rspec-support (~> 3.12.0)
     rspec-support (3.12.1)
     rubyzip (2.3.2)
+    selenium-devtools (0.116.0)
+      selenium-webdriver (~> 4.2)
     selenium-webdriver (4.12.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -87,6 +89,7 @@ DEPENDENCIES
   capybara (~> 3.39, >= 3.39.2)
   cucumber (~> 9.0, >= 9.0.1)
   rspec (~> 3.12)
+  selenium-devtools (~> 0.116.0)
   selenium-webdriver (~> 4.12)
   site_prism (~> 4.0, >= 4.0.3)
 
