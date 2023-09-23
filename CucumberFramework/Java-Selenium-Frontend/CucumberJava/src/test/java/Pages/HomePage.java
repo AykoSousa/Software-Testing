@@ -7,8 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 	
-	@FindBy(id = "logout")
-	WebElement btn_logout;
+	@FindBy(id = "logout_sidebar_link")
+	WebElement logout_btn;
 	
 	WebDriver driver;
 	
@@ -17,8 +17,8 @@ public class HomePage {
 		PageFactory.initElements(driver, LoginPage.class);
 	}
 	
-	public void checkLogoutIsDisplayed() {
-		btn_logout.isDisplayed();
+	public void checkLogoutBtnIsDisplayed() {
+		logout_btn.isDisplayed();
 	}
 
 }

@@ -24,6 +24,7 @@ public class LoginSteps {
 	public void browserSetup() {
 		
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+		
 		driver = new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
@@ -41,22 +42,30 @@ public class LoginSteps {
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
 		
-		driver.navigate().to("https://www.youtube.com/");
+		driver.navigate().to("https://www.saucedemo.com/");
 	}
 
 	@When("user enters valid username and password")
 	public void user_enters_valid_username_and_password() {
-	    
-		System.out.print("Hello");
+		
+	    login = new LoginPage(driver);
+
+		login.enterUsername("standard_user");
+		login.enterPassword("secret_sauce");
 	}
 
 	@And("clicks on login button")
-	public void clicks_on_login_button() {
-		System.out.print("Hello");
+	public void clicks_on_login_button() throws InterruptedException {
+		
+		login.clickOnLogin();
+		
+		Thread.sleep(2000);
 	}
 
 	@Then("user is navigated to the home page")
 	public void user_is_navigated_to_the_home_page() {
-		System.out.print("Hello");
+		
+		System.out.print("Chegamos até aqui");
+		//home.checkLogoutBtnIsDisplayed();
 	}
 }

@@ -8,13 +8,13 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class LoginPage {
 
-	@FindBy(id = "name")
+	@FindBy(id = "user-name")
 	WebElement txt_username;
 	
 	@FindBy(id = "password")
 	WebElement txt_password;
 	
-	@FindBy(id = "login")
+	@FindBy(id = "login-button")
 	WebElement btn_login;
 	
 	WebDriver driver;
