@@ -2,6 +2,7 @@ package StepDefinitions;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -36,7 +37,6 @@ public class LoginSteps {
 	@After
 	public void teardown() {
 		driver.quit();
-		driver.close();
 	}
 	
 	@Given("user is on login page")
@@ -65,7 +65,8 @@ public class LoginSteps {
 	@Then("user is navigated to the home page")
 	public void user_is_navigated_to_the_home_page() {
 		
-		System.out.print("Chegamos até aqui");
+		//home = new HomePage(driver);
 		//home.checkLogoutBtnIsDisplayed();
+		driver.findElement(By.id("logout_sidebar_link")).isDisplayed();
 	}
 }
