@@ -30,10 +30,13 @@ mvn clean install
 ## Estrutura do Projeto
 A estrutura do projeto está organizada da seguinte forma:
 
-src/main/java: Contém os arquivos de código-fonte Java.
-src/test/java: Contém os arquivos de teste Cucumber.
-src/test/resources: Contém os arquivos de recursos do Cucumber, como arquivos de características e arquivos de configuração.
-target: Contém os resultados da compilação, incluindo relatórios de testes
+**src/main/java:** Contém os arquivos de código-fonte Java.
+
+**src/test/java:** Contém os arquivos de teste Cucumber.
+
+**src/test/resources:** Contém os arquivos de recursos do Cucumber, como arquivos de características e arquivos de configuração.
+
+**target:** Contém os resultados da compilação, incluindo relatórios de testes
 
 ## Executando os Testes
 Você pode executar os testes de automação usando o seguinte comando Maven:
