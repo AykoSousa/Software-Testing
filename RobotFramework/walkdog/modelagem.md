@@ -13,14 +13,12 @@ Modelagem de Dados:
 |E-mail                          | input[name="email"]                | Habilitado    | Sim
 |CPF                             | input[name="cpf"]                  | Habilitado    | Sim
 |CEP	                         | input[name="cep"]                  | Habilitado    | Sim
-|Buscar CEP	                     | input[type="button"]               | Habilitado    | Sim
 |Rua	                         | input[name="addressStreet"]        | Desabilitado  | Sim
 |Número	                         | input[name="addressNumber"]        | Habilitado    | Sim
 |Complemento	                 | input[name="addressDetails"]       | Habilitado    | Não
 |Bairro	                         | input[name="addressDistrict"]      | Desabilitado  | Sim
 |Cidade/UF	                     | input[name="addressCityUf"]        | Desabilitado  | Sim
 |Upload do documento             | input[type="file"]                 | Habilitado    | Sim
-|Cadastrar	.button-register     |
 
 
 Cenários de aceite:
