@@ -1,61 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.10.10 on win32)" generated="20230929 23:19:50.750" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.10.10 on win32)" generated="20231001 12:44:24.941" rpa="false" schemaversion="4">
 <suite id="s1" name="Cadastro" source="C:\Projects\Software-Testing\RobotFramework\walkdog\cadastro.robot">
-<test id="s1-t1" name="CPF incorreto" line="42">
+<test id="s1-t1" name="Email incorreto" line="54">
+<kw name="Open Browser To Register Page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230929 23:19:51.292" level="INFO">Opening browser 'Chrome' to base url 'https://walkdog.vercel.app/signup'.</msg>
-<status status="PASS" starttime="20230929 23:19:51.291" endtime="20230929 23:19:55.833"/>
+<msg timestamp="20231001 12:44:25.526" level="INFO">Opening browser 'Chrome' to base url 'https://walkdog.vercel.app/signup'.</msg>
+<status status="PASS" starttime="20231001 12:44:25.525" endtime="20231001 12:44:29.407"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230929 23:19:55.836" endtime="20230929 23:19:56.107"/>
+<status status="PASS" starttime="20231001 12:44:29.408" endtime="20231001 12:44:29.592"/>
+</kw>
+<status status="PASS" starttime="20231001 12:44:25.524" endtime="20231001 12:44:29.592"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>css=input[name="cpf"]</arg>
-<arg>${CPF_INCORRETO}</arg>
+<arg>css=input[name="email"]</arg>
+<arg>${EMAIL_INCORRETO}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230929 23:19:56.109" level="INFO">Typing text '1234567890a' into text field 'css=input[name="cpf"]'.</msg>
-<status status="PASS" starttime="20230929 23:19:56.108" endtime="20230929 23:19:56.418"/>
+<msg timestamp="20231001 12:44:29.594" level="INFO">Typing text 'johndoe.com' into text field 'css=input[name="email"]'.</msg>
+<status status="PASS" starttime="20231001 12:44:29.593" endtime="20231001 12:44:30.157"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//button[contains(text(), "Cadastrar")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230929 23:19:56.420" level="INFO">Clicking element 'xpath=//button[contains(text(), "Cadastrar")]'.</msg>
-<status status="PASS" starttime="20230929 23:19:56.419" endtime="20230929 23:19:56.550"/>
+<msg timestamp="20231001 12:44:30.159" level="INFO">Clicking element 'xpath=//button[contains(text(), "Cadastrar")]'.</msg>
+<status status="PASS" starttime="20231001 12:44:30.158" endtime="20231001 12:44:30.358"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>xpath=//span[@class="alert-error"]</arg>
+<arg>xpath=//*[@id="page-walker"]/form/fieldset[1]/div[3]/div[1]/span</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230929 23:19:56.623" level="INFO">Element 'xpath=//span[@class="alert-error"]' is displayed.</msg>
-<status status="PASS" starttime="20230929 23:19:56.551" endtime="20230929 23:19:56.623"/>
+<msg timestamp="20231001 12:44:30.506" level="INFO">Element 'xpath=//*[@id="page-walker"]/form/fieldset[1]/div[3]/div[1]/span' is displayed.</msg>
+<status status="PASS" starttime="20231001 12:44:30.361" endtime="20231001 12:44:30.506"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>CPF inválido</arg>
+<arg>${MSG_EMAIL_INCORRETO}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230929 23:19:56.664" level="INFO">Current page contains text 'CPF inválido'.</msg>
-<status status="PASS" starttime="20230929 23:19:56.628" endtime="20230929 23:19:56.664"/>
+<msg timestamp="20231001 12:44:30.536" level="INFO">Current page contains text 'Informe um email válido'.</msg>
+<status status="PASS" starttime="20231001 12:44:30.507" endtime="20231001 12:44:30.536"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>xpath=//*[@id="page-walker"]/form/fieldset[1]/div[3]/div[1]/span</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20231001 12:44:30.694" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-2.png"&gt;&lt;img src="selenium-element-screenshot-2.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231001 12:44:30.536" endtime="20231001 12:44:30.695"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<arg>Cadastro_Dog_Walker_Invalid_CPF.png</arg>
+<arg>Cadastro_Dog_Walker_Invalid_email.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230929 23:19:56.814" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Cadastro_Dog_Walker_Invalid_CPF.png"&gt;&lt;img src="Cadastro_Dog_Walker_Invalid_CPF.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230929 23:19:56.665" endtime="20230929 23:19:56.814"/>
+<msg timestamp="20231001 12:44:30.947" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Cadastro_Dog_Walker_Invalid_email.png"&gt;&lt;img src="Cadastro_Dog_Walker_Invalid_email.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231001 12:44:30.723" endtime="20231001 12:44:30.947"/>
 </kw>
-<doc>Teste com CPF incorreto</doc>
-<tag>invalid_cpf</tag>
-<status status="PASS" starttime="20230929 23:19:51.290" endtime="20230929 23:19:56.816"/>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231001 12:44:30.953" endtime="20231001 12:44:34.124"/>
+</kw>
+<doc>Teste com Email incorreto</doc>
+<tag>invalid_email</tag>
+<status status="PASS" starttime="20231001 12:44:25.523" endtime="20231001 12:44:34.124"/>
 </test>
-<status status="PASS" starttime="20230929 23:19:50.755" endtime="20230929 23:19:56.819"/>
+<status status="PASS" starttime="20231001 12:44:24.951" endtime="20231001 12:44:34.127"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">invalid_cpf</stat>
+<stat pass="1" fail="0" skip="0">invalid_email</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Cadastro">Cadastro</stat>
