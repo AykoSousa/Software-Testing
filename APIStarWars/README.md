@@ -62,7 +62,7 @@ O projeto inclui os seguintes cenários de teste da API do Star Wars:
 ## Relatórios de Teste
 Os resultados dos testes são exibidos no painel do Cypress e também podem ser exportados para diferentes formatos.
 
-![Output](/cypress/img/output.PNG)
+![Output](cypress/img/output.PNG)
 
 ## Contribuições
 Se você deseja contribuir para este projeto, sinta-se à vontade para abrir issues, propor melhorias ou enviar solicitações de pull. Ficarei feliz em receber sua contribuição e aprender mais!.
